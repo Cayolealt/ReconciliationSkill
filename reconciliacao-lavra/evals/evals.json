@@ -1,0 +1,26 @@
+{
+  "skill_name": "reconciliacao-lavra",
+  "evals": [
+    {
+      "id": 0,
+      "name": "leitura-relatorio-gerencial",
+      "prompt": "anexei o relatório gerencial de produção de agosto da nossa operação de cobre (4 frentes de lavra, planta única). me ajuda a analisar? quero saber o que os números estão dizendo, onde está o problema do mês, e o que falta no processo de reconciliação pra ficar melhor.",
+      "expected_output": "Análise que decompõe o desvio por site e separa massa de teor; identifica que a maior perda é de teor e não de massa no site pior; distingue cobertura de reconciliação (29,5%) de fator de reconciliação e sinaliza o risco de nomenclatura; qualifica os resultados pela cobertura; pergunta onde a massa é medida antes de afirmar que falta controle volumétrico; aponta lacunas reais (ausência de nó de modelo, sem compliance to plan, sem tendência, sem rejeito da usina) com fontes citadas.",
+      "files": ["reconciliacao-lavra-workspace/relatorio_producao_agosto.pdf"]
+    },
+    {
+      "id": 1,
+      "name": "diagnostico-mcf-queda",
+      "prompt": "o MCF da nossa mina subterrânea caiu de 0,94 para 0,79 nos últimos 3 meses e ninguém mexeu no modelo de recursos nesse período. a diretoria vai perguntar na reunião de quinta. o que pode estar acontecendo e o que eu levanto antes da reunião?",
+      "expected_output": "Recusa a diagnosticar sem decompor o MCF em elos intermediários; explica que MCF agregado não é diagnóstico; lista hipóteses ordenadas por probabilidade com o que verificar em cada uma; pergunta o que aconteceu fisicamente na mina no período; alerta contra ajustar o modelo ou aplicar fator para fechar; menciona reconciliação ilusória e a regra de tendência; cita fontes.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "estruturar-codigo-pratica",
+      "prompt": "preciso estruturar um código de prática de reconciliação para a nossa operação (2 minas subterrâneas e 1 cava, cobre, planta única). hoje é tudo planilha e cada área tem a sua. por onde eu começo e o que o documento precisa ter?",
+      "expected_output": "Começa pelo mapeamento de fluxo de minério e pontos de medição, não pela lista de fatores; cobre os cinco elementos obrigatórios (relações-chave, coleta e validação de dados, metodologias e cálculos, relatórios, accountability) mais tolerâncias e rastreio de valor; nomenclatura descritiva em vez de F1/F2; champion e dono sênior; templates concretos; alerta sobre planilha não ser banco de dados; cita fontes.",
+      "files": []
+    }
+  ]
+}

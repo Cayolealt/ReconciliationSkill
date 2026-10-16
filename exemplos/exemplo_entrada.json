@@ -1,0 +1,24 @@
+{
+  "site": "Exemplo",
+  "periodo": "2026-08",
+  "nos": [
+    {"nome": "Modelo de longo prazo", "massa": 80000, "teor": 2.76, "metal": 7100, "teor_unidade": "g/t", "metal_unidade": "oz"},
+    {"nome": "Modelo de curto prazo", "massa": 80000, "teor": 2.55, "metal": 6560, "teor_unidade": "g/t", "metal_unidade": "oz"},
+    {"nome": "Planejamento", "massa": 75000, "teor": 2.70, "metal": 6510, "teor_unidade": "g/t", "metal_unidade": "oz"},
+    {"nome": "Operacao", "massa": 75000, "teor": 2.42, "metal": 5840, "teor_unidade": "g/t", "metal_unidade": "oz"},
+    {"nome": "Produtos da usina", "metal": 5040, "teor_unidade": "g/t", "metal_unidade": "oz"}
+  ],
+  "indicadores_proativos": {
+    "longo_prazo": "Modelo de longo prazo",
+    "curto_prazo": "Modelo de curto prazo",
+    "planejamento": "Planejamento",
+    "operacao": "Operacao",
+    "alimentacao_usina": "Operacao",
+    "produtos_usina": "Produtos da usina",
+    "base": "metal"
+  },
+  "compliance": {"lavrado_em_plano": 1400, "planejado_nao_lavrado": 200, "lavrado_nao_planejado": 700},
+  "overbreak": {"volume_projetado": 1000, "volume_lavrado": 1050, "volume_em_projeto": 960, "area_parede_exposta": 400},
+  "serie_mensal": [0.95, 0.94, 0.93],
+  "limites": {"monitorar": 0.05, "acao": 0.10}
+}
