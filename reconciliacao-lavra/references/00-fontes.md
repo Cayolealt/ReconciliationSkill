@@ -4,8 +4,10 @@ Todo conteúdo operacional das referências desta skill foi extraído das fontes
 **Sempre cite a fonte** ao apresentar uma fórmula, faixa de tolerância ou critério ao usuário —
 reconciliação é assunto de governança e o número precisa ser rastreável.
 
-Os PDFs originais estão em `references/artigos/` para consulta direta quando a
-pergunta exigir detalhe que a extração não cobre (leia o PDF por faixa de páginas).
+Os PDFs originais **não são distribuídos com a skill** (direito autoral). Quem tiver acesso legítimo
+a eles pode colocá-los em `references/artigos/`; se a pasta existir, consulte o PDF por faixa de
+páginas quando a pergunta exigir detalhe que a extração não cobre. Se não existir, trabalhe com a
+extração e cite autor/ano — nunca afirme ter lido um original que não está disponível.
 
 | Chave de citação | Fonte | Para que serve |
 |---|---|---|
@@ -26,5 +28,6 @@ pergunta exigir detalhe que a extração não cobre (leia o PDF por faixa de pá
 
 ## Observações sobre as fontes
 
-- Todos os artigos citados nesta skill estão em `references/artigos/`, incluindo Morley & Arvidson (2017).
+- Os artigos citados não acompanham a skill; a referência completa de cada um está na tabela acima
+  para que o usuário localize o original.
 - Não reproduzir texto integral dos artigos em relatórios. Citar autor/ano e, quando útil, a tabela/figura.

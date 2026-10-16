@@ -2,7 +2,8 @@
 """Paleta da skill de reconciliação — instância de referência, validada.
 
 Para adotar a identidade visual da sua empresa, **troque apenas os valores deste
-arquivo** e revalide com o validador da skill `dataviz`:
+arquivo** e revalide o contraste e a separação para daltonismo. Se você tiver a skill
+`dataviz` disponível, o validador dela faz isso:
 
     node scripts/validate_palette.js "<hex,hex,...>" --mode light  --surface <sua superfície clara>
     node scripts/validate_palette.js "<hex,hex,...>" --mode dark   --surface <sua superfície escura>

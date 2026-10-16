@@ -167,7 +167,7 @@ corrigem imediatamente.
 
 ## Teoria de amostragem — o mínimo necessário
 
-(Chieregati, 2023, cap. 1, a partir de Gy e Pitard. Detalhe completo em `references/artigos/`.)
+(Chieregati, 2023, cap. 1, a partir de Gy e Pitard. Detalhe completo no original, se disponível em `references/artigos/`.)
 
 - **Heterogeneidade é a única fonte de todos os erros de amostragem** (Gy, 1998).
 - Precisão ≠ acurácia. **Precisão** = dispersão em torno da média (variância do erro, s²SE).

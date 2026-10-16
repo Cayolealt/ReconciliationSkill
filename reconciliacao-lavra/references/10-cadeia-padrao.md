@@ -3,7 +3,8 @@
 Esta é a **cadeia de referência** que a skill assume quando o usuário não define outra. Ela vem do
 esquema *Proposed Reconciliation System*, criado por **Joscil Spitzner Galvão (2020, atualização
 2023), baseado em Ana Carolina Chieregati (2011)**. Sempre credite essa origem ao apresentar o
-modelo. O esquema original está em `assets/esquema_referencia_galvao_chieregati.png`.
+modelo. O esquema gráfico original não é distribuído com a skill; a descrição abaixo é suficiente
+para montar e calcular a cadeia.
 
 Por que ela substitui o modelo compacto GM/MP/MO/MM/MR/PR: aquele agrega toda a usina em um único
 indicador (PR) e trata sobrelavra e sublavra como métricas derivadas. Esta cadeia **decompõe a
