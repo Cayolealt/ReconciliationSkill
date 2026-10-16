@@ -46,22 +46,39 @@ fator de caminhão, cobertura de reconciliação.
 
 **1. Baixe o pacote**
 
-Pegue `reconciliacao-lavra.skill` em [Releases](../../releases) — ou empacote o diretório você mesmo:
+Pegue `reconciliacao-lavra.skill` na [release mais recente](../../releases/latest). O arquivo é um
+ZIP comum com a pasta `reconciliacao-lavra/` na raiz — se o seu sistema pedir, renomeie para `.zip`.
+
+Para empacotar você mesmo a partir do código:
 
 ```bash
-zip -r reconciliacao-lavra.skill reconciliacao-lavra/ -x "*__pycache__*"
+zip -r reconciliacao-lavra.zip reconciliacao-lavra/ -x "*__pycache__*" "*/references/artigos/*"
 ```
 
 **2. Instale**
 
-- **Claude (app / Cowork):** anexe o arquivo `.skill` numa conversa e clique em **Save skill**.
-- **Claude Code:** copie o diretório `reconciliacao-lavra/` para `~/.claude/skills/`.
+- **Claude (web e app desktop):** em **Customize → Skills**, clique em **+ Create skill → Upload a
+  skill** e envie o arquivo. A skill fica disponível em todas as suas conversas e projetos.
+- **Organizações (planos Team e Enterprise):** um owner pode provisionar a skill para a
+  organização inteira em **Organization settings → Skills**, ou habilitar o compartilhamento para
+  que você publique a sua cópia para colegas.
+- **Claude Code:** copie a pasta `reconciliacao-lavra/` para `~/.claude/skills/` (todos os seus
+  projetos) ou para `.claude/skills/` na raiz de um repositório (só aquele projeto, versionada
+  junto).
 
-**3. Dependências dos scripts** (só se for usar os cálculos e gráficos)
+Depois de instalar, teste com um dos pedidos da seção abaixo.
+
+**3. Dependências dos scripts** (só para cálculos, gráficos e leitura de planilhas)
 
 ```bash
-pip install pandas openpyxl matplotlib reportlab cairosvg pypdf
+pip install -r requirements.txt
 ```
+
+O núcleo de cálculo (`reconciliacao.py`) não precisa de nenhuma — roda só com Python. O
+`cairosvg` é opcional: sem ele, o diagrama da cadeia sai em SVG em vez de PNG.
+
+**Atualizar:** baixe o pacote da versão nova e envie de novo (no Claude) ou substitua a pasta (no
+Claude Code). As mudanças de cada versão estão em [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
@@ -217,8 +234,11 @@ O que está aqui é o **conteúdo operacional extraído** (fórmulas, faixas, cr
 com citação de autor e ano em cada caso, no formato que a literatura técnica usa normalmente.
 
 A bibliografia completa está em [`references/00-fontes.md`](reconciliacao-lavra/references/00-fontes.md).
-Para usar a skill com os PDFs disponíveis para consulta direta, coloque-os em
-`reconciliacao-lavra/references/artigos/`.
+Se você tiver acesso legítimo aos PDFs, pode colocá-los em `reconciliacao-lavra/references/artigos/`
+na sua cópia local; a skill consulta a pasta quando ela existe e funciona normalmente sem ela.
+
+O esquema gráfico original da cadeia de valor de referência (Galvão, 2020, rev. 2023) também não
+é distribuído; a skill descreve a cadeia em texto em `references/10-cadeia-padrao.md`.
 
 ---
 

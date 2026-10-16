@@ -195,7 +195,16 @@ def cadeia_valor(faixas: list, indicadores: list, titulo: str, arquivo: str,
     if arquivo.lower().endswith(".svg"):
         open(arquivo, "w", encoding="utf-8").write(svg)
     else:
-        import cairosvg
+        try:
+            import cairosvg
+        except ImportError:
+            # Sem cairosvg (ou sem a biblioteca de sistema Cairo): entrega o SVG e avisa,
+            # em vez de falhar. O SVG abre em qualquer navegador e converte depois.
+            alternativo = arquivo.rsplit(".", 1)[0] + ".svg"
+            open(alternativo, "w", encoding="utf-8").write(svg)
+            print(f"[aviso] cairosvg indisponível — PNG não gerado; SVG salvo em {alternativo}. "
+                  "Instale com `pip install cairosvg` (requer a biblioteca Cairo do sistema).")
+            return alternativo
         cairosvg.svg2png(bytestring=svg.encode("utf-8"), write_to=arquivo,
                          scale=escala_png, background_color=c["superficie"])
     return arquivo

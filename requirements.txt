@@ -1,0 +1,12 @@
+# Dependências dos scripts da skill (só necessárias para cálculos, gráficos e leitura de planilhas).
+# O núcleo de cálculo (reconciliacao.py, incluindo --autoteste) roda só com a biblioteca padrão.
+numpy
+pandas
+openpyxl
+matplotlib
+reportlab
+pypdf
+
+# Opcional: converte o diagrama da cadeia (SVG) para PNG.
+# Requer a biblioteca Cairo instalada no sistema. Sem ela, o diagrama sai em SVG com um aviso.
+cairosvg

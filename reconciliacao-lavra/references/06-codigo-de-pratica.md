@@ -206,7 +206,7 @@ melhorias de 0,5-2,0% em geologia e modelagem; 0,5-3% em planejamento; 0,5-9,0% 
 
 ## Anexos recomendados do código
 
-(A partir do esqueleto em português de `references/artigos/` e de Morley, 2014.)
+(A partir do esqueleto em português de `assets/guia_codigo_de_pratica.docx` e de Morley, 2014.)
 
 - Anexo A: Diagrama da cadeia de valor da mina, com os nós e relações monitoradas.
 - Anexo B: Diagramas de mapeamento de processos (matriz de raias/colunas e SIPOCs detalhados).

@@ -58,7 +58,7 @@ Leia apenas o que a tarefa exige — não carregue tudo de uma vez.
 | `references/08-pilhas-e-estoques.md` | Qualquer coisa envolvendo pilha, estoque, latência, densidade aparente |
 | `references/09-orcamento-e-ciclo-mensal.md` | Orçamento anual, variações mensais, ciclo de fechamento |
 | `references/anexo-codigos-legados.md` | Usuário chegou com F1/R2/G3/M1/I2 e é preciso traduzir |
-| `references/artigos/` | PDFs originais, para detalhe que a extração não cobre (ler por faixa de páginas) |
+| `references/artigos/` | **Opcional, não distribuída com a skill** (direito autoral). Se o usuário tiver colocado os PDFs originais ali, ler por faixa de páginas para detalhe que a extração não cobre; se a pasta não existir, trabalhar só com a extração e citar autor/ano |
 
 ## Scripts
 
@@ -126,7 +126,7 @@ python scripts/normalizar_entrada.py --arquivo producao.xlsx --aba <aba> --mapa 
 
 Quando o usuário não define outra, a skill assume a cadeia de **Joscil Spitzner Galvão (2020,
 rev. 2023), baseada em Ana Carolina Chieregati (2011)** — documentada em
-`references/10-cadeia-padrao.md`, com o esquema original em `assets/`. **Credite essa origem**
+`references/10-cadeia-padrao.md` (o esquema gráfico original não é distribuído com a skill). **Credite essa origem**
 ao apresentar o modelo.
 
 Oito indicadores: **GM** (modelo geológico) · **MP** (planejamento) · **MO** (operação de lavra) ·
@@ -245,8 +245,8 @@ marcadas — um código com campo em branco identificado vale mais que um texto 
 
 Usar `06-codigo-de-pratica.md`. Se a operação já tiver um código ou rascunho próprio, **preencher e
 evoluir a estrutura existente** em vez de impor outra — o código precisa refletir o fluxo real
-daquela mina. Se não tiver, `references/artigos/Procedimento_reconciliacao.docx` traz um esqueleto em
-português como ponto de partida. Cobrir os elementos obrigatórios: relações-chave, coleta e validação
+daquela mina. Se não tiver, o próprio `assets/guia_codigo_de_pratica.docx` é o esqueleto em
+português de ponto de partida. Cobrir os elementos obrigatórios: relações-chave, coleta e validação
 de dados, metodologias e cálculos, relatórios, accountability, tolerâncias, rastreio de valor.
 
 ## Formato de saída
@@ -273,10 +273,10 @@ tendência?) e as **barras divergentes de sobrelavra e sublavra** (as duas perda
 A terceira é a mais importante desta skill: ela mata a reconciliação ilusória visualmente, o que
 nenhum parágrafo consegue fazer com a mesma força.
 
-**Antes de desenhar qualquer gráfico, carregue a skill `dataviz`.** Ela traz o procedimento
-(forma primeiro, cor por último), o validador de paleta que deve ser executado em vez de julgado
-a olho, as especificações de marca e o catálogo de antipadrões. Os scripts desta skill já seguem
-essas regras; qualquer gráfico novo também deve seguir.
+Os scripts desta skill já seguem as regras de visualização abaixo; qualquer gráfico novo também
+deve seguir. **Se houver uma skill de visualização de dados disponível no ambiente** (por exemplo
+`dataviz`), carregue-a antes de desenhar um gráfico novo — ela traz procedimento, validador de
+paleta e catálogo de antipadrões. Se não houver, as regras desta seção bastam.
 
 **Pergunte ao usuário qual destino ele quer** antes de gerar — PNG estático para o relatório
 paginado, painel HTML navegável com hover e tabela de dados, ou os dois. Os dois são legítimos e
